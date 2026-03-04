@@ -33,7 +33,7 @@ This project aims to develop a smart home system that responds to voice commands
 ## 🛠 Technologies Used
 
 ### Software
-- C++ (Arduino IDE)
+- Embedded c (Arduino IDE)
 
 ### Hardware
 - Arduino Uno
@@ -61,13 +61,13 @@ This project aims to develop a smart home system that responds to voice commands
 ### Arduino Uno
 Acts as the central controller of the system. It receives inputs and controls output devices.
 
-### SEN0539 Voice Recognition Module
+### Gravity: Voice Recognition Module (SEN0539)
 - Offline voice recognition
 - 121 built-in commands
 - Supports 17 custom commands
 - Communicates via I2C/UART
 
-### SEN0285 Gesture Sensor
+### Gravity: GR10-30 Gesture Sensor (SEN0285)
 - Detects 7 types of gestures
 - Adjustable range (0–30 cm)
 - Built-in gesture recognition algorithm
@@ -98,4 +98,51 @@ Gesture-Voice-SmartHome/
 ├── setup.png
 ├── gesture.png
 └── voice.png
+
+---
+
+## 🧠 System Architecture
+
+The system follows a modular architecture:
+
+Input Layer:
+- Voice Recognition Module
+- Gesture Sensor
+
+Processing Layer:
+- Arduino Uno
+
+Output Layer:
+- Relay Module
+- L298 Motor Driver
+
+This layered approach ensures scalability and easier debugging.
+
+---
+
+## 🛡 Safety Considerations
+
+- Ensure proper electrical isolation while handling high-voltage appliances.
+- Do not touch relay terminals when powered.
+- Use appropriate rated power supply.
+- Double-check wiring before powering the system.
+
+---
+
+## 🔮 Future Enhancements
+
+- IoT integration for remote monitoring
+- Mobile application support
+- AI-based adaptive voice recognition
+- Energy usage monitoring
+- Multi-room automation support
+
+---
+
+## 📌 Applications
+
+- Smart homes
+- Assistive technology for elderly and disabled individuals
+- Contactless automation systems
+- Industrial basic automation
 
